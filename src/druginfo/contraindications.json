@@ -1,0 +1,369 @@
+{
+  "contraindication_levels": {
+    "absolute": {
+      "penalty_score": 1.0,
+      "description": "绝对禁忌：有明确证据表明合用会产生严重、危及生命的不良反应",
+      "pairs": [
+        {
+          "drug_class_a": "MAOI",
+          "drug_class_b": "SSRI",
+          "description": "MAOI与SSRI合用可能导致5-羟色胺综合征"
+        },
+        {
+          "drug_class_a": "MAOI",
+          "drug_class_b": "SNRI",
+          "description": "MAOI与SNRI合用可能导致5-羟色胺综合征"
+        },
+        {
+          "drug_class_a": "MAOI",
+          "drug_class_b": "TCA",
+          "description": "MAOI与TCA合用可能导致5-羟色胺综合征"
+        },
+        {
+          "drug_class_a": "MAOI",
+          "drug_class_b": "Other_AD",
+          "description": "MAOI与其他抗抑郁药合用可能导致5-羟色胺综合征"
+        }
+      ]
+    },
+    "major": {
+      "penalty_score": 0.5,
+      "description": "重大风险：合用会显著增加严重不良反应的风险，通常需要避免",
+      "rules": [
+        {
+          "id": 5,
+          "type": "multiple_qtc_drugs",
+          "threshold": 2,
+          "risk_level": "high",
+          "description": "两种及以上属于“高 QTc 延长风险药物”的组合 -> -0.5"
+        },
+        {
+          "id": 6,
+          "type": "lithium_interaction",
+          "interacting_classes": ["Diuretic"],
+          "description": "Lithium + Diuretic -> 增加锂中毒风险 -> -0.5"
+        },
+        {
+          "id": 7,
+          "type": "lithium_interaction",
+          "interacting_classes": ["NSAID"],
+          "description": "Lithium + NSAID -> 增加锂中毒风险 -> -0.5"
+        },
+        {
+          "id": 8,
+          "type": "lithium_interaction",
+          "interacting_classes": ["ACE Inhibitor"],
+          "description": "Lithium + ACE Inhibitor -> 增加锂中毒风险 -> -0.5"
+        },
+        {
+          "id": 9,
+          "type": "lithium_interaction",
+          "interacting_classes": ["ARB"],
+          "description": "Lithium + ARB -> 增加锂中毒风险 -> -0.5"
+        },
+        {
+          "id": 10,
+          "type": "lithium_plus_high_qtc_antipsychotic",
+          "description": "Lithium + 高风险 QTc 的抗精神病药（例如齐拉西酮）并用 -> 重大风险（-0.5）"
+        }
+      ]
+    },
+    "moderate": {
+      "penalty_score": 0.2,
+      "description": "一般风险：合用可能加重副作用，或影响疗效，但通常不直接危及生命",
+      "rules": [
+        {
+          "type": "multiple_cns_depressants",
+          "threshold": 3,
+          "description": "三种及以上CNS抑制剂合用可能导致过度镇静"
+        },
+        {
+          "type": "high_anticholinergic_burden",
+          "threshold": 3,
+          "description": "高抗胆碱能负荷可能导致认知功能下降、谵妄"
+        },
+        {
+          "type": "dopamine_agonist_antagonist",
+          "description": "多巴胺激动剂与拮抗剂合用可能导致药理拮抗"
+        },
+        {
+          "drug_class_a": "SSRI",
+          "drug_class_b": "SNRI",
+          "description": "SSRI + SNRI -> increased serotonin-related adverse effects (医生已标注为不宜合用，放在 moderate/explicit_pairs 以保留灵活性)"
+        }
+      ]
+    }
+  },
+  "duplication_penalty": 0.2,
+  "duplication_rules": {
+    "forbidden_duplicates": [
+      "SSRI",
+      "SNRI",
+      "TCA",
+      "Antipsychotic",
+      "Benzodiazepine",
+      "Z-drug"
+    ],
+    "forbidden_pairs": [
+      [
+        "SSRI",
+        "SNRI"
+      ]
+    ],
+    "allowed_overlap_pairs": [],
+    "note": "forbidden_duplicates: 同类重复用药需扣分；forbidden_pairs: 跨类但明确禁止的组合；allowed_overlap_pairs: 临床允许短期过渡可列入以免误判。"
+  },
+  "drug_classes": {
+    "MAOI": [
+      "司来吉兰",
+      "雷沙吉兰"
+    ],
+    "SSRI": [
+      "氟西汀",
+      "帕罗西汀",
+      "舍曲林",
+      "氟伏沙明",
+      "西酞普兰",
+      "艾司西酞普兰"
+    ],
+    "SNRI": [
+      "文拉法辛",
+      "度洛西汀",
+      "米那普仑"
+    ],
+    "TCA": [
+      "阿米替林",
+      "氯米帕明",
+      "多塞平",
+      "马普替林"
+    ],
+    "Other_AD": [
+      "曲唑酮",
+      "圣约翰草提取物",
+      "安非他酮",
+      "阿戈美拉汀",
+      "伏硫西汀",
+      "米氮平",
+      "米安色林"
+    ],
+    "Lithium": [
+      "碳酸锂"
+    ],
+    "Antipsychotic": [
+      "氟哌啶醇",
+      "氯丙嗪",
+      "奋乃静",
+      "舒必利",
+      "硫必利",
+      "五氟利多",
+      "利培酮",
+      "奥氮平",
+      "喹硫平",
+      "氯氮平",
+      "阿立哌唑",
+      "齐拉西酮",
+      "帕利哌酮",
+      "氨磺必利",
+      "哌罗匹隆",
+      "鲁拉西酮",
+      "布南色林"
+    ],
+    "Benzodiazepine": [
+      "地西泮",
+      "氯硝西泮",
+      "劳拉西泮",
+      "阿普唑仑",
+      "艾司唑仑",
+      "奥沙西泮",
+      "硝西泮",
+      "咪达唑仑"
+    ],
+    "Z-drug": [
+      "唑吡坦",
+      "右佐匹克隆",
+      "佐匹克隆",
+      "扎来普隆"
+    ],
+    "Barbiturate": [
+      "苯巴比妥"
+    ],
+    "Other_Sedative": [
+      "水合氯醛胶浆"
+    ],
+    "Mood_Stabilizer": [
+      "丙戊酸",
+      "卡马西平",
+      "拉莫三嗪"
+    ],
+    "Antiepileptic": [
+      "托吡酯",
+      "苯妥英钠"
+    ],
+    "Anti-Parkinson": [
+      "苯海索",
+      "金刚烷胺",
+      "普拉克索",
+      "吡贝地尔",
+      "司来吉兰",
+      "雷沙吉兰",
+      "恩他卡朋",
+      "多巴丝肼",
+      "卡左双多巴"
+    ],
+    "Other_CNS": [
+      "甲钴胺",
+      "美金刚",
+      "加兰他敏",
+      "谷维素",
+      "普瑞巴林",
+      "利扎曲普坦",
+      "氘丁苯那嗪"
+    ],
+    "Stimulant": [
+      "哌甲酯",
+      "托莫西汀"
+    ],
+    "Anxiolytic": [
+      "坦度螺酮",
+      "丁螺环酮"
+    ],
+    "qtc_high_risk": [
+      "齐拉西酮",
+      "硫必利",
+      "氟哌啶醇",
+      "艾司西酞普兰",
+      "氨磺必利",
+      "喹硫平",
+      "帕利哌酮",
+      "氯丙嗪",
+      "阿米替林",
+      "氯米帕明"
+    ]
+  },
+  "drug_attributes": {
+    "serotonergic": [
+      "SSRI",
+      "SNRI",
+      "TCA",
+      "MAOI",
+      "Other_AD"
+    ],
+    "is_maoi": [
+      "MAOI"
+    ],
+    "qtc_high_risk": [
+      "齐拉西酮",
+      "硫必利",
+      "氟哌啶醇",
+      "艾司西酞普兰",
+      "氨磺必利",
+      "喹硫平",
+      "帕利哌酮",
+      "氯丙嗪",
+      "阿米替林",
+      "氯米帕明"
+    ],
+    "qtc_moderate_risk": [
+      "舍曲林",
+      "西酞普兰",
+      "利培酮",
+      "奋乃静",
+      "多塞平"
+    ],
+    "cns_depressant": [
+      "Benzodiazepine",
+      "Z-drug",
+      "Barbiturate",
+      "Antipsychotic",
+      "Other_AD",
+      "Other_Sedative"
+    ],
+    "strong_anticholinergic": [
+      "苯海索",
+      "阿米替林",
+      "氯米帕明",
+      "多塞平",
+      "帕罗西汀",
+      "奥氮平",
+      "氯氮平"
+    ],
+    "lithium_drugs": [
+      "碳酸锂"
+    ],
+    "lithium_interacting_classes": [
+      "Diuretic",
+      "NSAID",
+      "ACE Inhibitor",
+      "ARB"
+    ],
+    "lithium_interacting_drugs_examples": [
+      "氢氯噻嗪",
+      "呋塞米",
+      "布洛芬",
+      "依那普利"
+    ],
+    "interacting_classes_examples": {
+      "Diuretic": [
+        "氢氯噻嗪",
+        "呋塞米"
+      ],
+      "NSAID": [
+        "布洛芬",
+        "萘普生"
+      ],
+      "ACE Inhibitor": [
+        "依那普利",
+        "贝那普利"
+      ],
+      "ARB": [
+        "缬沙坦",
+        "氯沙坦"
+      ]
+    },
+    "dopamine_antagonist": [
+      "Antipsychotic"
+    ],
+    "cns_risk_note": "若患者合并心脏病/电解质异常/高龄等，应在实际评估中加重风险权重。"
+  },
+  "metabolic_interactions": {
+    "penalty_score": 0.5,
+    "description": "药代学/肝酶抑制或诱导导致血药浓度异常的交互（示例）",
+    "rules": [
+      {
+        "drug_a": "氟伏沙明",
+        "drug_b": "阿戈美拉汀",
+        "description": "氟伏沙明强抑制CYP1A2，可显著增加阿戈美拉汀血药浓度，应避免合用或严密监测"
+      },
+      {
+        "drug_a": "帕罗西汀",
+        "drug_b": "阿米替林",
+        "description": "帕罗西汀抑制CYP2D6，可能使三环类血药浓度上升"
+      },
+      {
+        "drug_a": "帕罗西汀",
+        "drug_b": "利培酮",
+        "description": "帕罗西汀抑制CYP2D6可能影响利培酮代谢"
+      },
+      {
+        "drug_a": "氟伏沙明",
+        "drug_b": "氯氮平",
+        "description": "氟伏沙明抑制CYP1A2可使氯氮平血药浓度升高"
+      },
+      {
+        "drug_a": "氟伏沙明",
+        "drug_b": "奥氮平",
+        "description": "氟伏沙明抑制CYP1A2可使奥氮平血药浓度升高"
+      }
+    ]
+  },
+  "antihypertensives_listed": [
+    "氢氯噻嗪",
+    "呋塞米",
+    "依那普利",
+    "贝那普利",
+    "缬沙坦",
+    "氯沙坦",
+    "倍他乐克",
+    "氨氯地平"
+  ]
+}
