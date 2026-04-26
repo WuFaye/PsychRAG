@@ -1,0 +1,310 @@
+{
+  "氘丁苯那嗪": {
+    "primary_tag": "Other CNS Agents",
+    "sub_tag": "VMAT2 Inhibitor"
+  },
+  "舍曲林": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "SSRI"
+  },
+  "托吡酯": {
+    "primary_tag": "Antiepileptics",
+    "sub_tag": "Other Antiepileptic"
+  },
+  "鲁拉西酮": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "坦度螺酮": {
+    "primary_tag": "Anxiolytics",
+    "sub_tag": "5-HT1A Receptor Agonist"
+  },
+  "圣约翰草提取物": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "Other Antidepressant"
+  },
+  "硝西泮": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Benzodiazepine"
+  },
+  "硫必利": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Typical Antipsychotic"
+  },
+  "哌罗匹隆": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "托莫西汀": {
+    "primary_tag": "ADHD Medications",
+    "sub_tag": "Norepinephrine Reuptake Inhibitor"
+  },
+  "氟哌啶醇": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Typical Antipsychotic"
+  },
+  "司来吉兰": {
+    "primary_tag": "Anti-Parkinson",
+    "sub_tag": "MAO-B Inhibitor"
+  },
+  "氟西汀": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "SSRI"
+  },
+  "苯海索": {
+    "primary_tag": "Anti-Parkinson",
+    "sub_tag": "Anticholinergic"
+  },
+  "艾司唑仑": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Benzodiazepine"
+  },
+  "马普替林": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "Tetracyclic Antidepressant"
+  },
+  "阿戈美拉汀": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "Other Antidepressant"
+  },
+  "扎来普隆": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Z-drugs"
+  },
+  "氯丙嗪": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Typical Antipsychotic"
+  },
+  "佐匹克隆": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Z-drugs"
+  },
+  "安非他酮": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "NDRI"
+  },
+  "阿米替林": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "TCA"
+  },
+  "利培酮": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "多塞平": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "TCA"
+  },
+  "甲钴胺": {
+    "primary_tag": "Other CNS Agents",
+    "sub_tag": "Neurotrophic"
+  },
+  "度洛西汀": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "SNRI"
+  },
+  "喹硫平": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "阿立哌唑": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "氨磺必利": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "地西泮": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Benzodiazepine"
+  },
+  "米安色林": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "Tetracyclic Antidepressant"
+  },
+  "恩他卡朋": {
+    "primary_tag": "Anti-Parkinson",
+    "sub_tag": "COMT Inhibitor"
+  },
+  "劳拉西泮": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Benzodiazepine"
+  },
+  "五氟利多": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Typical Antipsychotic"
+  },
+  "碳酸锂": {
+    "primary_tag": "Mood Stabilizers",
+    "sub_tag": "Lithium"
+  },
+  "雷沙吉兰": {
+    "primary_tag": "Anti-Parkinson",
+    "sub_tag": "MAO-B Inhibitor"
+  },
+  "唑吡坦": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Z-drugs"
+  },
+  "米那普仑": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "SNRI"
+  },
+  "普拉克索": {
+    "primary_tag": "Anti-Parkinson",
+    "sub_tag": "Dopamine Receptor Agonist"
+  },
+  "氯氮平": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "文拉法辛": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "SNRI"
+  },
+  "氯硝西泮": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Benzodiazepine"
+  },
+  "齐拉西酮": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "丙戊酸": {
+    "primary_tag": "Mood Stabilizers",
+    "sub_tag": "Anticonvulsant"
+  },
+  "帕罗西汀": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "SSRI"
+  },
+  "奥沙西泮": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Benzodiazepine"
+  },
+  "西酞普兰": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "SSRI"
+  },
+  "舒必利": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Typical Antipsychotic"
+  },
+  "水合氯醛胶浆": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Other Sedative"
+  },
+  "奥氮平": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "咪达唑仑": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Benzodiazepine"
+  },
+  "卡左双多巴": {
+    "primary_tag": "Anti-Parkinson",
+    "sub_tag": "Levodopa"
+  },
+  "普瑞巴林": {
+    "primary_tag": "Anxiolytics",
+    "sub_tag": "Calcium Channel Modulator"
+  },
+  "阿普唑仑": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Benzodiazepine"
+  },
+  "右佐匹克隆": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Z-drugs"
+  },
+  "美金刚": {
+    "primary_tag": "Other CNS Agents",
+    "sub_tag": "NMDA Receptor Antagonist"
+  },
+  "奋乃静": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Typical Antipsychotic"
+  },
+  "曲唑酮": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "Other Antidepressant"
+  },
+  "加兰他敏": {
+    "primary_tag": "Other CNS Agents",
+    "sub_tag": "Cholinesterase Inhibitor"
+  },
+  "金刚烷胺": {
+    "primary_tag": "Anti-Parkinson",
+    "sub_tag": "Dopaminergic"
+  },
+  "艾司西酞普兰": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "SSRI"
+  },
+  "吡贝地尔": {
+    "primary_tag": "Anti-Parkinson",
+    "sub_tag": "Dopamine Receptor Agonist"
+  },
+  "拉莫三嗪": {
+    "primary_tag": "Mood Stabilizers",
+    "sub_tag": "Anticonvulsant"
+  },
+  "利扎曲普坦": {
+    "primary_tag": "Analgesics",
+    "sub_tag": "5-HT1B/1D Agonist"
+  },
+  "氯米帕明": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "TCA"
+  },
+  "哌甲酯": {
+    "primary_tag": "CNS Stimulants",
+    "sub_tag": "Stimulant"
+  },
+  "丁螺环酮": {
+    "primary_tag": "Anxiolytics",
+    "sub_tag": "5-HT1A Receptor Agonist"
+  },
+  "卡马西平": {
+    "primary_tag": "Mood Stabilizers",
+    "sub_tag": "Anticonvulsant"
+  },
+  "帕利哌酮": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "伏硫西汀": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "Other Antidepressant"
+  },
+  "布南色林": {
+    "primary_tag": "Antipsychotics",
+    "sub_tag": "Atypical Antipsychotic"
+  },
+  "多巴丝肼": {
+    "primary_tag": "Anti-Parkinson",
+    "sub_tag": "Levodopa"
+  },
+  "谷维素": {
+    "primary_tag": "Other CNS Agents",
+    "sub_tag": "Autonomic Regulator"
+  },
+  "氟伏沙明": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "SSRI"
+  },
+  "苯妥英钠": {
+    "primary_tag": "Antiepileptics",
+    "sub_tag": "Other Antiepileptic"
+  },
+  "苯巴比妥": {
+    "primary_tag": "Sedative-Hypnotics",
+    "sub_tag": "Barbiturate"
+  },
+  "米氮平": {
+    "primary_tag": "Antidepressants",
+    "sub_tag": "NaSSA"
+  }
+}
